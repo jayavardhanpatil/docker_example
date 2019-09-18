@@ -1,0 +1,16 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t jayavardhanpatil/node .
+  - docker images jayavardhanpatil/node
+
+before_deploy:
+  - docker login -u jayavardhanpatil -p CalPolyCPP
+
+deploy:
+  provider: script
+  script: docker push jayavardhanpatil/docker_example
+  on: 
+    branch: master
