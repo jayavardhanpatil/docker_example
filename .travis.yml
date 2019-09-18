@@ -7,10 +7,10 @@ script:
   - docker images jayavardhanpatil/node
 
 before_deploy:
-  - docker login -u jayavardhanpatil -p CalPolyCPP
+  - docker login -u <jayavardhanpatil> -p <CalPolyCPP>
 
 deploy:
   provider: script
-  script: docker push jayavardhanpatil/docker_example
+  script: docker push jayavardhanpatil/node
   on: 
     branch: master
