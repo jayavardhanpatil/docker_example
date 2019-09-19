@@ -8,7 +8,7 @@ const client = mongodb.MongoClient;
 
 client.connect(config.DB, { useNewUrlParser: true }, (err, db) => { 
     if(err) {
-        console.log('database is not connected')
+        console.log('database is not connected!')
     }
     else {
         console.log('connected!!')
