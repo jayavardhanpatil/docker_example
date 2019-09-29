@@ -1,2 +1,2 @@
-# node-docker
-Simple node and express docker 
+# CI With Travis CI and Docker
+Sample CI flow with Travis and Docker 
